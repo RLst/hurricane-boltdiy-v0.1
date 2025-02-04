@@ -1,0 +1,162 @@
+.exercise-card {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 15px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  text-align: left;
+  position: relative;
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.card-header h3 {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.edit-button,
+.delete-button,
+.save-button,
+.cancel-button,
+.add-set-button {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #f8f9fa;
+  color: #555;
+}
+
+.edit-button:hover,
+.delete-button:hover,
+.save-button:hover,
+.cancel-button:hover,
+.add-set-button:hover {
+  background-color: #e9ecef;
+}
+
+.delete-button {
+  background-color: #dc3545;
+  color: white;
+  margin-top: 10px;
+  width: 100%;
+}
+
+.delete-button:hover {
+  background-color: #c82333;
+}
+
+.notes {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 10px;
+  white-space: pre-line; /* For keeping line breaks */
+}
+
+
+/* Sets Table Styles */
+.sets-table, .sets-edit-table {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.sets-table table, .sets-edit-table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.sets-table th, .sets-edit-table th,
+.sets-table td, .sets-edit-table td {
+  padding: 8px;
+  border-bottom: 1px solid #ddd;
+  text-align: left;
+}
+
+.sets-edit-table th {
+  background-color: #f4f4f4;
+}
+
+.sets-edit-table input[type="text"] {
+  width: 100%;
+  padding: 6px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.sets-edit-table .set-actions button {
+  background: none;
+  color: #dc3545;
+}
+.sets-edit-table .set-actions button:hover {
+  background-color: #f8d7da;
+}
+
+.add-set-button {
+  background-color: #007bff;
+  color: white;
+  width: auto;
+  padding: 8px 16px;
+  margin-top: 5px;
+}
+
+.add-set-button:hover {
+  background-color: #0056b3;
+}
+
+
+/* Edit Mode Styles */
+.exercise-card.edit-mode {
+  border: 2px solid #007bff;
+}
+
+.exercise-card.edit-mode .card-header input[type="text"] {
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-right: 10px;
+  font-size: 1.2rem;
+}
+
+.exercise-card.edit-mode textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+  resize: vertical;
+  min-height: 80px;
+}
+
+.edit-actions {
+  display: flex;
+  gap: 5px;
+}
+
+.edit-actions button {
+  background: none;
+}
+
+.edit-actions .save-button {
+  color: #28a745;
+}
+.edit-actions .save-button:hover {
+  background-color: #c3e6cb;
+}
+
+.edit-actions .cancel-button {
+  color: #dc3545;
+}
+.edit-actions .cancel-button:hover {
+  background-color: #f8d7da;
+}
